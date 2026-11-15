@@ -4,3 +4,5 @@ LEGAL.md
 tools/
 data/
 .DS_Store
+# Mock Test 3 stays private until its Assamese text and answers are checked
+mock3.js
