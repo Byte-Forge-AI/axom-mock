@@ -3,4 +3,11 @@ PLAN.md
 LEGAL.md
 tools/
 data/
+book/
 .DS_Store
+# Book tests are exclusive to Amazon (KDP Select). Never publish them on the website.
+mock6.js
+mock7.js
+mock8.js
+mock9.js
+mock10.js
