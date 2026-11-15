@@ -25,9 +25,9 @@
   </div>
 
   <div class="card">
-    <h2 style="margin-top:0" data-en="Mock Test 1 — free" data-as="মক টেষ্ট 1 — বিনামূলীয়া"></h2>
+    <h2 style="margin-top:0" data-en="Free mock tests" data-as="বিনামূলীয়া মক টেষ্ট"></h2>
     <p data-en="Arithmetic, English, Reasoning, Assam (history, geography, polity, economy) and General Knowledge. No sign-up is necessary." data-as="পাটীগণিত, ইংৰাজী, যুক্তি, অসম (বুৰঞ্জী, ভূগোল, ৰাজনীতি, অৰ্থনীতি) আৰু সাধাৰণ জ্ঞান। পঞ্জীয়নৰ প্ৰয়োজন নাই।"></p>
-    <a class="btn" href="test.html" data-en="Start the free test" data-as="বিনামূলীয়া টেষ্ট আৰম্ভ কৰক"></a>
+    <p id="tests"></p>
   </div>
 
   <div class="card">
@@ -41,6 +41,10 @@
   <p data-en="The Government of Assam announced recruitment examinations for 5,734 posts in six departments (Assam Police, Forest, Home Guards, APRO, Fire and Emergency Services, Prisons), starting on 1 February 2027. Always confirm dates and the syllabus on the official website slprbassam.in." data-as="অসম চৰকাৰে ছটা বিভাগৰ (অসম আৰক্ষী, বন, গৃহৰক্ষী, APRO, অগ্নিনিৰ্বাপক আৰু জৰুৰীকালীন সেৱা, কাৰাগাৰ) 5,734 টা পদৰ নিযুক্তি পৰীক্ষা 1 ফেব্ৰুৱাৰী 2027 ৰ পৰা আৰম্ভ হ'ব বুলি ঘোষণা কৰিছে। তাৰিখ আৰু পাঠ্যক্ৰম সদায় চৰকাৰী ৱেবছাইট slprbassam.in ত নিশ্চিত কৰক।"></p>
 </main>
 <footer><span data-en="AxomMock is an independent practice site. It is not connected with SLPRB or the Government of Assam. All questions are written by AxomMock. A good score here is not a promise of selection." data-as="AxomMock এটা স্বতন্ত্ৰ অনুশীলন ছাইট। SLPRB বা অসম চৰকাৰৰ সৈতে ইয়াৰ কোনো সম্পৰ্ক নাই। সকলো প্ৰশ্ন AxomMock য়ে নিজাকৈ প্ৰস্তুত কৰা। ইয়াত ভাল নম্বৰ পোৱাটো নিৰ্বাচনৰ নিশ্চয়তা নহয়।"></span><br><a href="legal.html">Terms · Privacy · Contact</a></footer>
+<script>
+  var TESTS = 2; // number of published free tests
+  (function () { var h = ''; for (var i = 1; i <= TESTS; i++) h += '<a class="btn" style="margin:4px 6px 4px 0" href="test.html?m=' + i + '"><span data-en="Mock Test ' + i + '" data-as="মক টেষ্ট ' + i + '"></span></a>'; document.getElementById('tests').innerHTML = h; })();
+</script>
 <script src="lang.js"></script>
 </body>
 </html>

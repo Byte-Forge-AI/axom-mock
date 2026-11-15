@@ -13,7 +13,9 @@
 </header>
 <main class="wrap" id="app"></main>
 <script src="lang.js"></script>
-<script src="mock1.js"></script>
-<script src="app.js"></script>
+<script>
+  var MOCK_N = Math.max(1, Math.min(99, parseInt((location.search.match(/[?&]m=(\d+)/) || [])[1] || "1", 10)));
+  document.write('<script src="mock' + MOCK_N + '.js"><\/script><script src="app.js"><\/script>');
+</script>
 </body>
 </html>
